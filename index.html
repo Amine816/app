@@ -17,16 +17,29 @@
             background-color: rgb(116, 113, 113);
             width: 70%;
             height: 55px;
-            word-spacing: 10px;
+            text-decoration: none ;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500 ;
+            font-size: large;
+        }
+       
+        #uli {
+          display: ;
+          transform: translateY(-15px);
+            word-spacing: 30px;
         }
         #more {
           width: 30px;
+          transform: translateY(8px);
+        
         }
         #more:hover {
           transform: rotate(90deg);
 
         }
         #div {
+          
+
           background-color: rgb(116, 113, 113);
           position: absolute;
           z-index: 1;
@@ -44,24 +57,26 @@
           text-align: center;
           padding-left: 10px;
           padding-right: 10px;
+          text-decoration: none;
+
         }
         #div a:hover{
           background-color: #cccc34;
+          text-decoration: none;
+
         }
         #dropbutton:hover div {
           display: block;
+          
         }
         .list {
+  display: inline-block;
   line-height: 55px;
-  display:inline-block;
-  color: black;
-  text-decoration: none;
-  
-  word-spacing: 20px;
 }
 #home {
   opacity: 1;
   color: black;
+  text-decoration: none;
 
   display: inline-block;
 }
@@ -69,11 +84,13 @@
   opacity: 1;
   color: black;
   background-color: #cccc34;
+  text-decoration: none;
+  
 }
 #news {
   opacity:0.8 ;
   color: black;
-  
+  text-decoration: none;
 
 display: inline-block;
 
@@ -82,11 +99,12 @@ display: inline-block;
   opacity: 1;
   color: black;
   background-color: #cccc34;
+  text-decoration: none;
 }
 #features {
   opacity: 0.5;
   color: black;
-
+  text-decoration: none;
 display: inline-block;
 
 }
@@ -94,6 +112,11 @@ display: inline-block;
   opacity: 1;
   color: black;
   background-color: #cccc34;
+  text-decoration: none;
+}
+.hra {
+  border-color: black;
+  width: 50px;
 }
         /* header */
 
@@ -113,6 +136,7 @@ display: inline-block;
         #search {
           border-radius: 5px;
           width: 300px;
+          height: 35px;
         } 
         #search:focus{
           outline: none;
@@ -126,13 +150,14 @@ display: inline-block;
  
        /* main */
         main{
-           
             height: 1800px;
             border-style: solid;
             border-top-width: 15px;
             border-top-color: rgb(207, 207, 53);
             border-bottom-color: rgb(207, 207, 53);
             border-bottom-width:15px ;
+            border-left-width: 0px;
+            border-right-width: 0px;
             width: 80%;
             float: right;
            background-image: linear-gradient(to right,#cccc34,rgb(116, 113, 113),#cccc34) ;
@@ -219,7 +244,7 @@ display: inline-block;
       
 /* aside */
         aside {
-          height: 1800px;
+          height: 1830px;
           width: 20%;
           float: left;
           animation: back 8s 2 both;
@@ -240,8 +265,9 @@ display: inline-block;
 }
         }
         #h6 {
-            text-decoration: underline black wavy;
-            
+            text-decoration: underline black ;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
            }
        #ul {
         background-color: rgb(116, 113, 113);
@@ -275,7 +301,8 @@ justify-content: space-evenly;
 
 }
 #section1 h4 {
-  font-family: monospace;
+  font-family: 'Rubik Moonrocks';
+  font-size: xx-large;
   text-decoration: underline;
   color: black;
   display: flex;
@@ -333,6 +360,9 @@ justify-content: space-evenly;
   font-size: smaller;
 
  }
+ #h6 {
+    font-size:small;
+  }
 }
  @media only screen and (max-width:1124px) and (min-width:613px) {
   #search {
@@ -345,6 +375,7 @@ justify-content: space-evenly;
   header {
     width: 50%;
   }
+  
 }
 
 /* media queries */
@@ -385,13 +416,13 @@ justify-content: space-evenly;
    </nav>
 
     <header>
-      <ul id="left">
+      <ul id="uli">
          <li id="dropbutton" class="list"> <img src="img/more.png" id="more"/> 
          <div id="div">
-          <a href="">HOME </a> <hr>
-          <a href="">NEWS</a> <hr>
-          <a href="">MORE INFOS</a> <hr>
-          <a href="">ABOUT US</a> <hr>
+          <a href="">HOME </a> <hr class="hra">
+          <a href="">NEWS</a> <hr class="hra">
+          <a href="">MORE INFOS</a> <hr class="hra">
+          <a href="">ABOUT US</a> <hr class="hra">
         </div> 
        </li>
         <li class="list"><a title="Return home" id="home" href="">HOME</a> </li>
