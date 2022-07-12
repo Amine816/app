@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeB Maker</title>
+    <link rel="icon" href="img/My project (2).png" type="image/gif" sizes="32x32"/>
+    <link rel="shortcut" href="img/My project (2).png">
+    <link rel="apple-touch-icon " href="img/My project (2).png">
+
+    
+    <style>
+      /* header */
+        header{
+           float: left;
+            background-color: rgb(116, 113, 113);
+            width: 70%;
+            height: 55px;
+            word-spacing: 10px;
+        }
+        #more {
+          width: 30px;
+        }
+        #more:hover {
+          transform: rotate(90deg);
+
+        }
+        #div {
+          background-color: rgb(116, 113, 113);
+          position: absolute;
+          z-index: 1;
+          display: none;
+          padding-left: 5px;
+          padding-right: 5px;
+          border-width:3px ;
+          border-color: black;
+          word-spacing: normal;
+
+        }
+        #div a{
+          color: black;
+          display: block;
+          text-align: center;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        #div a:hover{
+          background-color: #cccc34;
+        }
+        #dropbutton:hover div {
+          display: block;
+        }
+        .list {
+  line-height: 55px;
+  display:inline-block;
+  color: black;
+  text-decoration: none;
+  
+  word-spacing: 20px;
+}
+#home {
+  opacity: 1;
+  color: black;
+
+  display: inline-block;
+}
+#home:hover {
+  opacity: 1;
+  color: black;
+  background-color: #cccc34;
+}
+#news {
+  opacity:0.8 ;
+  color: black;
+  
+
+display: inline-block;
+
+}
+#news:hover {
+  opacity: 1;
+  color: black;
+  background-color: #cccc34;
+}
+#features {
+  opacity: 0.5;
+  color: black;
+
+display: inline-block;
+
+}
+#features:hover {
+  opacity: 1;
+  color: black;
+  background-color: #cccc34;
+}
+        /* header */
+
+
+
+        /* navBar */
+
+         #navb {
+          width:30% ;
+          height: 55px;
+          float: right;
+         background-color:rgb(116, 113, 113); 
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+        } 
+        #search {
+          border-radius: 5px;
+          width: 300px;
+        } 
+        #search:focus{
+          outline: none;
+        }
+        #searchbutton {
+          background-color: rgb(116, 113, 113);
+          border: none;
+        }
+        /* navBar */
+    
+ 
+       /* main */
+        main{
+           
+            height: 1800px;
+            border-style: solid;
+            border-top-width: 15px;
+            border-top-color: rgb(207, 207, 53);
+            border-bottom-color: rgb(207, 207, 53);
+            border-bottom-width:15px ;
+            width: 80%;
+            float: right;
+           background-image: linear-gradient(to right,#cccc34,rgb(116, 113, 113),#cccc34) ;
+        }
+        #block1 {
+          display: flex;
+          justify-content: flex-start;
+        }
+        p{
+          font-style: italic;
+          font-size: 30px;
+          font-weight: bolder;
+          font-family:'Gulzar', serif ;
+          
+        }
+           #op {
+            opacity:0.4 ;
+            width: 100px;
+            height: fit-content;
+             display: inline-block;
+            transition: 3s width 1s, 3s opacity ;
+            margin: auto;
+            color: transparent;
+            background: url(images.jpg);
+            -webkit-background-clip: text;
+            background-size:100% 30px ;
+            -webkit-text-stroke: thin red ;
+            text-align: center;
+           }  
+           #op:hover{
+            opacity: 1;
+            width: 50%;
+            font-size: larger;
+            font-weight: 900;
+            background-color: #333333;
+            height: fit-content;
+            text-align: center;
+            
+           }
+        
+.fadein:hover{
+  animation: fadein 1s  both ;
+
+}
+@keyframes fadein{
+0% {
+  transform: translateZ(0);
+  opacity: 1;
+}
+100% {
+  transform: translateZ(80px);
+  opacity: 0;
+}
+
+}
+.fadein {
+  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+  width: 100px;
+  cursor: not-allowed;
+  
+} 
+#tablo{
+  
+  width: 80%;
+
+}
+#tablo thead{
+  background-color: #55acee;
+}
+  #tablo td {
+    padding: 0.75rem;
+    
+  } 
+  #tablo tbody{
+    background-color: #333333;
+  } 
+  #csstext {
+    text-align: justify;
+  }
+/* main */
+
+
+
+      
+/* aside */
+        aside {
+          height: 1800px;
+          width: 20%;
+          float: left;
+          animation: back 8s 2 both;
+
+        }
+        @keyframes back{
+          0% {
+            background-position: 50% 0% ;
+            background-color:rgb(116, 113, 113) ;
+          }
+          50% {
+            background-position: 50% 100%;
+            background-color: #cccc34;
+          } 
+          100% {
+            background-position: 50% 100%;
+            background-color:#cccc34 ;
+}
+        }
+        #h6 {
+            text-decoration: underline black wavy;
+            
+           }
+       #ul {
+        background-color: rgb(116, 113, 113);
+        padding-top: 5px;
+        padding-bottom: 7px;
+        margin-top: 4px;
+        margin-right: 4px;
+             
+       }
+       
+       /* aside */
+
+        
+       
+       
+
+/* footer */
+#footer {
+  clear: both;
+height: 120px;
+margin-top: 2px;
+}
+.section12 {
+  height: 60px;
+  
+}
+#section1 {
+  background-color: rgb(116, 113, 113);  
+display: flex;
+justify-content: space-evenly;
+
+}
+#section1 h4 {
+  font-family: monospace;
+  text-decoration: underline;
+  color: black;
+  display: flex;
+  align-self: center;
+  justify-self: start;
+}
+#section1 div{
+  width: 50%;
+  display: flex;
+  justify-content:space-evenly ;
+  align-items: center;
+}
+#section2 {
+  background-color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-weight: 300;
+  margin-top: 2px;
+}
+#thanks {
+  font-size: small;
+  color: black;
+  font-weight: 600;
+}
+/* footer */
+
+/* media queries */
+@media only screen and (max-width:612px)  {
+  #li {
+    font-size: smaller;
+
+  }
+  #h6 {
+    font-size: smaller; 
+
+  }
+  header{
+    width: 100% ;
+    word-spacing: 5px;
+  }
+  #navb{
+    width: 100%;
+    justify-content: center;
+  }
+  #home {
+    font-size: smaller;
+  }
+  #news{
+    font-size: smaller;
+
+  }
+ #features {
+  font-size: smaller;
+
+ }
+}
+ @media only screen and (max-width:1124px) and (min-width:613px) {
+  #search {
+    width: auto;
+  }
+  #navb {
+    width: 50%;
+
+  }
+  header {
+    width: 50%;
+  }
+}
+
+/* media queries */
+
+       
+
+    </style>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+  <!-- Google Fonts Roboto -->
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+  />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+</head>
+
+
+<body>
+  <script type="module">
+    import { Toast } from 'bootstrap.esm.min.js'
+  
+    Array.from(document.querySelectorAll('.toast'))
+      .forEach(toastNode => new Toast(toastNode))
+  </script>
+  <nav id="navb">
+    <form>
+    <input type="search" placeholder="SEARCH" name="search" id="search">
+    <button id="searchbutton" type="submit"><img src="img/loupe.png" /></button>
+  </form>
+   </nav>
+
+    <header>
+      <ul id="left">
+         <li id="dropbutton" class="list"> <img src="img/more.png" id="more"/> 
+         <div id="div">
+          <a href="">HOME </a> <hr>
+          <a href="">NEWS</a> <hr>
+          <a href="">MORE INFOS</a> <hr>
+          <a href="">ABOUT US</a> <hr>
+        </div> 
+       </li>
+        <li class="list"><a title="Return home" id="home" href="">HOME</a> </li>
+        <li class="list"><a id="news" href="">NEWS</a></li>
+        <li class="list"><a id="features" href="">FEATURES</a></li>
+      </ul>
+     
+    </header>
+  
+    
+    <aside> 
+      <br>
+     <h6 id="h6"> why learning css :</h6>
+      
+<ul id="ul">
+  <li id="li"># </li>
+  <li id="li"> #</li>
+  <li id="li"># </li>
+  <li id="li"> #</li>
+  <li id="li"> #</li>
+
+</ul> 
+
+    </aside>
+    
+    <main >
+      <div id="block1">
+      <img src="img/My project.png" class="fadein"/>
+     <h1 id="op">SHIYAR ACADEMY</h1>
+    </div>
+      <hr/>
+<hr/>
+<br>
+<table id="tablo">
+  <thead>
+   <tr>
+    <td>#</td>
+    <td>NAME </td>
+    <td> SUCCESS </td>
+
+   </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td>1</td>
+    <td>html</td>
+    <td>yes</td>
+
+    </tr>
+   <tr>
+    <td>2</td>
+    <td>css</td>
+    <td>not yet</td>
+   </tr>
+   <tr>
+    <td>3</td>
+    <td>javascript</td>
+    <td>not yet</td>
+
+   </tr>
+  </tbody>
+</table>
+ <br> 
+ <article>
+  <h5> WHY LEARNING CSS : </h5>
+  <ul id="csstext">
+    <li>It's easy to take a free Web template and build a website. But these templates rarely inspire by their elegance, so your website will look like every other site on the internet. By learning CSS you can modify these templates so that they display your colors and styles. Thus, you'll have a customized website without a lot of effort.</li>
+    <li>There are a lot of web designers who will build your website or your CSS for you. But paying someone else to maintain your website or blog can get expensive, even if you only have them create the designs and you then maintain the content. Knowing how to modify the CSS will save you money when you find small problems that you can fix yourself. And as you practice, you'll be able to fix bigger and more complex problems.​</li>
+    <li>Once you know CSS really well, you can sell these services to other websites. And if you're looking to become a freelance web designer, you won't get far if you don't know CSS</li>
+    <li>Many older websites that were built without CSS prove difficult to redesign. But once a site is built with CSS hooks, it can be redesigned very quickly. Changing things like the colors and backgrounds refresh how a site looks with very little effort. In fact, many sites now put up special versions of their sites for special occasions and they can do this because it only takes a few hours to create an alternate stylesheet for the occasion.</li>
+    <li>CSS supports sites that look very different from page to page, without a lot of extensive coding. For example, many sites now perform slight color variations on the different sections of the site. Using page IDs, you can change the CSS for each section and use the same HTML structure for each section. The only thing that changes is the content and the CSS.</li>
+
+  </ul>
+ </article>
+
+      
+     
+    </main>
+
+    <footer id="footer" class="bg-light text-center text-black">
+     <section id="section1" class="section12">
+      <h4>CONTACT US :</h4>
+      <div> 
+<a href=""  role="button"><img class="icon" src="img/youtube.png" ></a>
+<a href=""  role="button"><img class="icon" src="img/instagram.png" ></a>
+<a href=""  role="button"><img class="icon" src="img/facebook.png" ></a>
+<a href=""  role="button"><img class="icon" src="img/twitter.png" ></a>
+<a href=""  role="button"><img class="icon" src="img/chercher.png" ></a>
+
+</div>
+     </section>   
+       <section id="section2" class="section12">
+        <i> © 2022 Copyright: <i id="thanks"> thanks shiyar academy </i></i>
+       
+         </section> 
+      </footer>
+    
+</body>
+</html>
